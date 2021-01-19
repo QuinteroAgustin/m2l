@@ -35,6 +35,8 @@
 
     <a href="ajouter.php">Ajouter une question</a>
 
+    <a href="index.php">Retourner à l'accueil</a>
+
     </table>
 </body>
 </html>
