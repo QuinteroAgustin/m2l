@@ -10,13 +10,12 @@
 <a href="index.php">Se déconnecter</a>
 
 <h3>Ajouter une question</h3>
-<br/>
-<form id="Ajouter" action="">
+<form id="liste.php" action="post">
   <label for="Question" >Question</label></br>
   <textarea type="text" id="Ajouter" name="ajouter" size="" value="">Poser votre question</textarea>
-  <input type="submit"
-</form>
-
-<p
+  </br> 
+  <input type="submit" value="Enregistrer" /> <input type="reset" value="Annuler" />
+  </form>
+</p>
 </body>
 </html>
