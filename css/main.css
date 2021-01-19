@@ -1,3 +1,19 @@
 @charset "utf-8";
 /* main.css */
 
+.navbar{
+    position:relative;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -ms-flex-align:center;
+    align-items:center;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    padding:.5rem 1rem
+}
+
+.navbar-dark 
+.navbar-brand{color:#fff}
+.bg-primary{background-color:#007bff!important}
