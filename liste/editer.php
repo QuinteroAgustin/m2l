@@ -16,6 +16,9 @@
 
     <textarea name="reponse" id="reponse" rows="10" cols="50" >Bien sûr que oui</textarea>
 
+    <input type="submit" value="Enregistrer"/>&nbsp;
+    
+    <input type="reset" value="Annuler"/>
 
 </body>
 </html>
