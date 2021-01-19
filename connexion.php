@@ -6,7 +6,8 @@
     <title>Page de connexion</title>
 </head>
 <body>
-<H1>Se connecter</H1>
+<h1>M2L</h1>
+<H2>Se connecter</H2>
 
 <div class="mb-3 row">
     <label for="inputpseudo" class="col-sm-2 col-form-label">Pseudo</label>
@@ -24,6 +25,7 @@
     <button type="submit" class="btn btn-primary mb-3">Ok</button>
     <button type="annulation" class="btn btn-primary mb-3">Annuler</button>
   </div>
+  <a href="index.php">acceuil</a>
   </div>
 </body>
 </html>
