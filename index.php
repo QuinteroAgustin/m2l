@@ -6,10 +6,14 @@
     <title>M2L</title>
 </head>
 <body>
+    <nav>
     <h1>Maison de ligue</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum blanditiis, provident exercitationem vero explicabo in eos dolores cumque iste, magni ad optio non harum mollitia laboriosam officia! Molestias, autem.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, debitis inventore ullam possimus, quas maiores a porro libero ab nihil, autem explicabo? Dolorum culpa corrupti voluptas perferendis, ipsum exercitationem animi.</p>
-    <a href="inscription.php">S'inscrire</a>
-    <a href="connexion.php">se connecter</a>
+    <a href="liste/liste.php">FAQ</a>
+    <br>
+    <form action="inscription.php"><input type="submit"value="Inscription"></form>
+    <br>
+    <form action="connexion.php"><input type="submit" value="Connexion"></form>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid in illo dolorum eveniet unde explicabo aut incidunt deserunt nemo, qui nesciunt officiis modi, sint laboriosam numquam ut dolorem sit voluptas.lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam qui nulla natus reprehenderit doloribus nihil corporis architecto est voluptatem expedita mollitia recusandae voluptates asperiores enim, voluptatum inventore neque voluptatibus. Autem?</p>
 </body>
 </html>
