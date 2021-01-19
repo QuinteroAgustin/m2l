@@ -33,7 +33,7 @@
             <td><a href="supprimer.php">Supprimer</a></td>
         </tr>
 
-        <a href="ajouter.php">Ajouter une question</a>
+    <a href="ajouter.php">Ajouter une question</a>
 
     </table>
 </body>
