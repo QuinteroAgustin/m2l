@@ -15,10 +15,10 @@
     <h3>Réponse</h3>
 
     <textarea name="reponse" id="reponse" rows="10" cols="50" >Bien sûr que oui</textarea>
-
+    <br></br>
     <input type="submit" value="Enregistrer"/>&nbsp;
-    
-    <input type="reset" value="Annuler"/>
 
+    <input type="reset" value="Annuler"/>
+    <br></br>
 </body>
 </html>
