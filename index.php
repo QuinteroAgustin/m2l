@@ -8,7 +8,7 @@
 <body>
     <nav>
     <h1>Maison de ligue</h1>
-    <a href="liste.liste.php">FAQ</a>
+    <a href="liste/liste.php">FAQ</a>
     <br>
     <form action="inscription.php"><input type="submit"value="Inscription"></form>
     <br>
