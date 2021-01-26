@@ -23,7 +23,7 @@
   <textarea name="question" id="question" rows="10" cols="50">Poser votre question</textarea></br>
   </br>
   <input type="submit" value="Enregistrer"/>
-  <input type="reset" value="Annuler" />
+  <input type="submit" value="Annuler"/>
   </form>
 </p>
 </body>
