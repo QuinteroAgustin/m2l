@@ -15,7 +15,7 @@
             <li class="ligne right"><a href="connexion.php">Connexion</a></li>
         </ul>
     </div>
-    <div class="marge">
+    <div class="center">
     <br>
         <h1>S'inscrire</h1>
         <form action="index.php" method="POST">
