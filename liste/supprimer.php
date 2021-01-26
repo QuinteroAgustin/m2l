@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M2L - Supprimer</title>
     <link rel="stylesheet" href="../css/main.css">
-
 </head>
 <body>
 <div>
@@ -27,9 +26,9 @@
 
     <textarea name="reponse" id="reponse" rows="10" cols="50" >Bien sûr que oui</textarea>
     <br></br>
-    <input type="submit" value="Supprimer"/>&nbsp;
+    <input type="submit" value="Supprimer" href="../index.php"/>&nbsp;
 
-    <input type="reset" value="Annuler"/>
+    <input type="reset" value="Annuler" href="../index.php"/>
     <br></br>
 </body>
 </html>
