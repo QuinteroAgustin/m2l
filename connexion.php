@@ -15,7 +15,7 @@
       <li class="ligne right"><a class="active" href="connexion.php">Connexion</a></li>
     </ul>
   </div>
-  <div class="marge">
+  <div class="center">
   <br>
     <h1>Se connecter</h1>
     <form action="index.php" methode="POST">
