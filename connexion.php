@@ -24,7 +24,7 @@
       <label for="password">Mot de passe</label>
       <input type="password" name="password" id="password">
       <br>
-      <p><a href="inscription.php">pas encore inscrit</a></p>
+      <p><a href="inscription.php">pas encore inscrit ?</a></p>
       <input type="submit" value="Se connecter">
     </form>
   </div>
