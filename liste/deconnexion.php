@@ -17,8 +17,9 @@
         </ul>
     </div>
     <div class="marge">
+    <br>
         <h1>Déconnexion</h1>
-        <p>Vous vous êtes bien déconnecté !</p>
+        <p>Vous avez bien été déconnecté</p>
         <form action="../index.php">
             <input type="submit" value="Retour à la page d'accueil">
         </form>
