@@ -9,10 +9,10 @@
 <body>
     <div>
         <ul class="navbar">
-            <li class="ligne left"><a class="tjaune"href="index.php">Accueil</a></li>
-            <li class="ligne left"><a class="active" href="liste/liste.php">FAQ</a></li>
-            <li class="ligne right"><a href="inscription.php">Inscription</a></li>
-            <li class="ligne right"><a href="connexion.php">Connexion</a></li>
+            <li class="ligne left"><a class="tjaune" href="../index.php">Accueil</a></li>
+            <li class="ligne left"><a class="active" href="liste.php">FAQ</a></li>
+            <li class="ligne right"><a href="../inscription.php">Inscription</a></li>
+            <li class="ligne right"><a href="../connexion.php">Connexion</a></li>
         </ul>
     </div>
   <div class="marge">
