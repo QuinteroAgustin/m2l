@@ -25,7 +25,7 @@
     <button type="submit" class="btn btn-primary mb-3">Ok</button>
     <button type="annulation" class="btn btn-primary mb-3">Annuler</button>
   </div>
-  <a href="index.php">acceuil</a>
+  <a href="index.php">accueil</a>
   </div>
 </body>
 </html>
