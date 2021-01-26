@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div>
+    <div>
         <ul class="navbar">
             <li class="ligne left"><a class="tjaune" href="../index.php">Accueil</a></li>
             <li class="ligne left"><a class="active" href="liste.php">FAQ</a></li>
@@ -16,11 +16,12 @@
             <li class="ligne right"><a href="../connexion.php">Connexion</a></li>
         </ul>
     </div>
-  <div class="marge">
-<br>
-<h1>Maison des Ligues</h1>
-<h2>Déconnexion</h2>
-<p>Vous vous êtes bien déconnecté !</p>
-<form action="../index.php"><button type="submit" class="btn btn-primary">Retour à la page d'accueil</button></form>
+    <div class="marge">
+        <h1>Déconnexion</h1>
+        <p>Vous vous êtes bien déconnecté !</p>
+        <form action="../index.php">
+            <input type="submit" value="Retour à la page d'accueil">
+        </form>
+    </div>
 </body>
 </html>
