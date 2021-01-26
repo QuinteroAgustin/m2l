@@ -22,10 +22,8 @@
     </div>
     <br>
     <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Ok</button>
-    <button type="annulation" class="btn btn-primary mb-3">Annuler</button>
-  </div>
-  <a href="index.php">accueil</a>
-  </div>
+    <form action="index.php"><button type="submit" class="btn btn-primary">Se connecter</button></form>
+    <br>
+    <form action="index.php"><button type="annulatoin" class="btn btn-primary">Annuler</button></form>
 </body>
 </html>
