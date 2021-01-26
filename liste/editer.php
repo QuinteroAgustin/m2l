@@ -27,9 +27,8 @@
 
     <textarea name="reponse" id="reponse" rows="10" cols="50" >Bien sûr que oui</textarea>
     <br></br>
-    <input type="submit" value="Enregistrer"/>&nbsp;
-
-    <input type="reset" value="Annuler"/>
-    <br></br>
+    <form action="liste.php"><button type="submit" class="btn btn-primary">Confirmer</button></form>
+    <br>
+    <form action="liste.php"><button type="submit" class="btn btn-primary">Annuler</button></form>
 </body>
 </html>

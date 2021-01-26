@@ -25,6 +25,6 @@
   <input type="submit" value="Soumettre"/>
   <input type="reset" value="Annuler" />
   </form>
-</p>
+  </p>
 </body>
 </html>
