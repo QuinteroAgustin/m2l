@@ -8,9 +8,7 @@
 <body>
 <h1>Maison des Ligues</h1>
 <h2>Déconnexion</h2>
-</br>
-Vous êtes bien déconnecté !
-
+<p>Vous êtes bien déconnecté !</p>
 <a href="index.php">Retour à la page d'accueil</a>
 </body>
 </html>
