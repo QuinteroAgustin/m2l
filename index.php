@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M2L</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-warning">
+    <div>
+        <ul>
+            <li class="ligne left"><a href="default.asp">Accueil</a></li>
+            <li class="ligne left"><a href="liste/liste.php">FAQ</a></li>
+            <li class="ligne right"><a href="inscription.php">Inscription</a></li>
+            <li class="ligne right"><a href="connexion.php">Connexion</a></li>
+        </ul>
+    </div>
+    <div>
     <h1>Maison de ligue</h1>
-    <a href="liste/liste.php">FAQ</a>
-    <br>
-    <form action="inscription.php"><button type="button" class="btn btn-success">Inscription</button></form>
-    <br>
-    <form action="connexion.php"><button type="button" class="btn btn-primary">Deconnexion</button></form>
-    </nav>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid in illo dolorum eveniet unde explicabo aut incidunt deserunt nemo, qui nesciunt officiis modi, sint laboriosam numquam ut dolorem sit voluptas.lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam qui nulla natus reprehenderit doloribus nihil corporis architecto est voluptatem expedita mollitia recusandae voluptates asperiores enim, voluptatum inventore neque voluptatibus. Autem?</p>
-</body>
+    </div>
+    </body>
 </html>
