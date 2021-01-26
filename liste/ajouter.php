@@ -17,12 +17,12 @@
   <div class="marge">
 <br>
 <h2>Maison des Ligues</h2>
-<h3>Ajouter une question</h3>
 <form id="Ajout" action="liste.php" method="post">
-  <label for="Question" >Question</label></br>
-  <textarea name="question" id="question" rows="10" cols="50">Poser votre question</textarea></br>
+  <label for="Question" >Ecrivez votre question :</label><br>
+  <br>
+  <textarea name="question" id="question" rows="10" cols="50"></textarea></br>
   </br>
-  <input type="submit" value="Enregistrer"/>
+  <input type="submit" value="Soumettre"/>
   <input type="reset" value="Annuler" />
   </form>
 </p>
