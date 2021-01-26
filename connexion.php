@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
     <form action="index.php" methode="POST">
       <label for="pseudo">Pseudo</label>
       <input type="text" name="pseudo" id="pseudo">
-      <br>
+      <br><br>
       <label for="password">Mot de passe</label>
       <input type="password" name="password" id="password">
       <br>
