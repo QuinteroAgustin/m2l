@@ -23,8 +23,8 @@
   <textarea name="question" id="question" rows="10" cols="50"></textarea></br>
   </br>
   <input type="submit" value="Soumettre"/>
-  <input type="reset" value="Annuler" />
+  <input type="submit" value="Annuler"/>
   </form>
-</p>
+  </p>
 </body>
 </html>

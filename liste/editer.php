@@ -27,9 +27,10 @@
 
     <textarea name="reponse" id="reponse" rows="10" cols="50" >Bien sûr que oui</textarea>
     <br></br>
-    <input type="submit" value="Enregistrer"/>&nbsp;
+    <form id="editer" action="liste.php" method="post">
+      <input type="submit" value="Confirmer"/>
+      <input type="reset" value="Annuler" />
+    </form>
 
-    <input type="reset" value="Annuler"/>
-    <br></br>
 </body>
 </html>
