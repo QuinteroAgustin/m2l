@@ -43,8 +43,8 @@
             <td><a href="supprimer.php">Supprimer</a></td>
         </tr>
     </table>
-    <a href="ajouter.php">Ajouter une question</a>
-    <a href="../index.php">Retourner à l'accueil</a>
+    <br>
+    <form action="ajouter.php"><button type="submit" class="btn btn-primary">Ajouter une question</button></form>
   </div>
 </body>
 </html>
