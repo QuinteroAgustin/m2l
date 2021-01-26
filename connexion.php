@@ -20,11 +20,11 @@
     <form action="index.php" methode="POST">
       <label for="pseudo">Pseudo</label>
       <input type="text" name="pseudo" id="pseudo">
-      <br>
+      <br><br>
       <label for="password">Mot de passe</label>
       <input type="password" name="password" id="password">
-      <br>
-      <input type="submit" value="Se connecter">
+      <br><br>
+      <input type="submit" value="Se connecter" href="index.php">
     </form>
   </div>
 </body>
