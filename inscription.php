@@ -16,6 +16,7 @@
         </ul>
     </div>
     <div class="marge">
+    <br>
         <h1>S'inscrire</h1>
         <form action="index.php" method="POST">
             <label for="pseudo">Pseudo : </label>
