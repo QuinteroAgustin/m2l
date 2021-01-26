@@ -12,9 +12,8 @@
 <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nom d'utilisateur</label>
-    <div id="emailHelp" class="form-text">Ne pas divulgué sont pseudo</div>
+    <div id="emailHelp" class="form-text">Ne pas divulguer son pseudo</div>
   </div>
-<<<<<<< HEAD
   <div class="mb-3 row">
     <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
@@ -23,7 +22,7 @@
     <br>
     <div class="col-auto">
     <form action="index.php"><button type="submit" class="btn btn-primary">Se connecter</button></form>
-    <br>
+    <br><br>
     <form action="index.php"><button type="annulation" class="btn btn-primary">Annuler</button></form>
 </body>
 </html>
