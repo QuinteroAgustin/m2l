@@ -7,7 +7,6 @@
 </head>
 <body>
 <h2>Maison des Ligues</h2>
-<a href="deconnexion.php">Se déconnecter</a>
 
 <h3>Ajouter une question</h3>
 <form id="Ajout" action="liste.php" method="post">
