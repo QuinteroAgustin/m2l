@@ -1,20 +1,3 @@
-<?php
-  $servername="127.0.0.1";
-  $username="maison2ligue";
-  $password="Maisondeuxligues";
-  //créer une connexion PDO
-  $conn= new mysqli($servername, $username, $password);
-  //test connexion
-  if($conn->connect_error){
-    die("Connexion échoué".$conn->connect_error);
-  }
-  $sql="USE m2l";
-  $result = $conn->query($sql);
-  $sql="SELECT * FROM user;";
-  echo ("lol".$result);
-
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -35,7 +18,7 @@
     <div class="center">
     <br>
         <h1>S'inscrire</h1>
-        <form action="index.php" method="POST">
+        <form action="validation.php" method="POST">
             <label for="pseudo">*Pseudo : </label>
             <input type="text" id="pseudo" name="pseudo">
             <br><br>
@@ -50,10 +33,10 @@
             <br><br>
             <label for="ligue">*Ligue : </label>
             <select name="ligue" id="ligue">
-                <option value="l1" selected="selected">Ligue de basket</option>
-                <option value="l1">Ligue de volley</option>
-                <option value="l1">Ligue de handball</option>
-                <option value="l1">Ligue de football</option>
+                <option value="1" selected="selected">Ligue de basket</option>
+                <option value="2">Ligue de volley</option>
+                <option value="3">Ligue de handball</option>
+                <option value="4">Ligue de football</option>
             </select>
             <br>
             <p>* : Champs obligatoires</p>
