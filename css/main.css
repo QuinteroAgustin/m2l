@@ -95,3 +95,17 @@ div.footer {
   color: aliceblue;
   
 }
+.box-button:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+  }
+  
+  .box-button:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .box-button span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
