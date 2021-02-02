@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M2L</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo.png">
 </head>
 <body>
     <div>
@@ -19,7 +20,7 @@
         <br><br>
     <div id="bloc_page">
         <header>
-            <img src="png/mdl (1).png" alt="Logo_page" title="Accueil" id="logo" class="centerpng"/>
+            <img src="img/logo.png" alt="Logo_page" title="Accueil" id="logo" class="centerpng"/>
     <br>
         <h1>Maison de ligue</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid in illo dolorum eveniet unde explicabo aut incidunt deserunt nemo, qui nesciunt officiis modi, sint laboriosam numquam ut dolorem sit voluptas.lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam qui nulla natus reprehenderit doloribus nihil corporis architecto est voluptatem expedita mollitia recusandae voluptates asperiores enim, voluptatum inventore neque voluptatibus. Autem?</p>
