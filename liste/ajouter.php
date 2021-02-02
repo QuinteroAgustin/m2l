@@ -23,8 +23,10 @@
       <textarea name="question" id="question" rows="10" cols="50"></textarea></br>
       </br>
       <input type="submit" value="Soumettre"/>
-      <a href="ajouter.php"><input type="submit" value="Annuler"/></a>
+      <input type="reset" value="Vider" />
     </form>
+    <br>
+    <a href="ajouter.php"><input type="submit" value="Annuler"/></a>
   </div>
   <footer>
     <div class="footer">

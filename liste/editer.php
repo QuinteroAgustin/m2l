@@ -24,8 +24,10 @@
       <textarea name="reponse" id="reponse" rows="10" cols="50" >Bien sûr que oui</textarea>
       <br></br>
       <input type="submit" value="Confirmer"/>
-      <input type="reset" value="Annuler" />
+      <input type="reset" value="Vider" />
     </form>
+    <br>
+    <a href="liste.php"><input type="submit" value="Retour"></a>
   </div>
   <footer>
     <div class="footer">
