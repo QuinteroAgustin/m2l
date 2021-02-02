@@ -8,14 +8,13 @@
 </head>
 <body>
 <div>
-        <ul class="navbar">
-            <li class="ligne left"><a class="tjaune" href="../index.php">Accueil</a></li>
-            <li class="ligne left"><a class="active" href="liste.php">FAQ</a></li>
-            <li class="ligne right"><a href="deconnexion.php">Déconnexion</a></li>
-        </ul>
-    </div>
-  <div class="marge">
-<br>
+  <ul class="navbar">
+      <li class="ligne left"><a class="tjaune" href="../index.php">Accueil</a></li>
+      <li class="ligne left"><a class="active" href="liste.php">FAQ</a></li>
+      <li class="ligne right"><a href="deconnexion.php">Déconnexion</a></li>
+  </ul>
+</div>
+<div class="marge">
 <h1>Maison des Ligues</h1>
 <h2>Ajouter une question</h2>
 <form id="Ajout" action="liste.php" method="post">
@@ -27,5 +26,12 @@
   <input type="submit" value="Annuler"/>
   </form>
   </p>
+</div>
+  <footer>
+    <div class="footer">
+      <ul class="foot_left">INFOS PRATIQUES</ul>
+      <ul class="foot_right">CONTACT</ul>
+        </div>
+  </footer>
 </body>
 </html>
