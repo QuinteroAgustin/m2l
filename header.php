@@ -8,7 +8,7 @@
     <link rel="icon" href="img/logo.png">
 </head>
 <body>
-    <div>
+<div>
         <ul class="navbar">
             <li class="ligne left"><a class="tjaune active"href="index.php">Accueil</a></li>
             <li class="ligne left"><a href="liste/liste.php">FAQ</a></li>
