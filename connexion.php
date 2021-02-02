@@ -1,22 +1,40 @@
+<?php
+$servername = "127.0.0.1";
+$username = "maison2ligue";
+$password = "Maisondeuxligues";
+//créer une connexion PDO
+$conn = new mysqli($servername, $username, $password);
+//test connexion
+if ($conn->connect_error) {
+  die("Connexion échoué" . $conn->connect_error);
+}
+$sql = "USE m2l";
+$result = $conn->query($sql);
+$sql = "SELECT * FROM user;";
+echo ("lol" . $result);
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M2L - Connexion</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M2L - Connexion</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <div>
     <ul class="navbar">
-      <li class="ligne left"><a class="tjaune"href="index.php">Accueil</a></li>
+      <li class="ligne left"><a class="tjaune" href="index.php">Accueil</a></li>
       <li class="ligne left"><a href="liste/liste.php">FAQ</a></li>
       <li class="ligne right"><a href="inscription.php">Inscription</a></li>
       <li class="ligne right"><a class="active" href="connexion.php">Connexion</a></li>
     </ul>
   </div>
   <div class="center">
-  <br>
+    <br>
     <h1>Se connecter</h1>
     <form action="index.php" methode="POST">
       <label for="pseudo">Pseudo :</label>
@@ -30,4 +48,5 @@
     </form>
   </div>
 </body>
+
 </html>
