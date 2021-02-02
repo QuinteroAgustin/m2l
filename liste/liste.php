@@ -35,7 +35,7 @@
             <td><a href="supprimer.php">Supprimer</a></td>
         </tr>
         <tr>
-            <td>1</td>
+            <td>2</td>
             <td>Gus</td>
             <td>Que signifie PSG ?</td>
             <td>Pas sûr de gagner</td>

@@ -1,3 +1,20 @@
+<?php
+  $servername="127.0.0.1";
+  $username="maison2ligue";
+  $password="Maisondeuxligues";
+  //créer une connexion PDO
+  $conn= new mysqli($servername, $username, $password);
+  //test connexion
+  if($conn->connect_error){
+    die("Connexion échoué".$conn->connect_error);
+  }
+  $sql="USE m2l";
+  $result = $conn->query($sql);
+  $sql="SELECT * FROM user;";
+  echo ("lol".$result);
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -44,5 +61,5 @@
             <input type="submit" value="S'inscrire">
         </form>
     </div>
-
+</body>
 </html>
