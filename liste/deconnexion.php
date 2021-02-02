@@ -15,7 +15,6 @@
             <li class="ligne right"><a href="deconnexion.php">Déconnexion</a></li>
         </ul>
     </div>
-<div class="marge">
     <div class="center">
         <h1>Maison des Ligues</h1>
         <h2>Déconnexion</h2>
