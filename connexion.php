@@ -28,6 +28,7 @@
       <input type="password" name="password" id="password">
       <br>
       <p><a href="inscription.php">Pas encore inscrit ?</a></p>
+      <input type="submit" value="se connecter" class="box-button">
     </form>
   </div>
 </body>
