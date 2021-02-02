@@ -8,35 +8,30 @@
 
 </head>
 <body>
-<div>
-        <ul class="navbar">
-            <li class="ligne left"><a class="tjaune" href="../index.php">Accueil</a></li>
-            <li class="ligne left"><a class="active" href="liste.php">FAQ</a></li>
-            <li class="ligne right"><a href="deconnexion.php">Déconnexion</a></li>
-        </ul>
-    </div>
+  <div>
+    <ul class="navbar">
+      <li class="ligne left"><a class="tjaune" href="../index.php">Accueil</a></li>
+      <li class="ligne left"><a class="active" href="liste.php">FAQ</a></li>
+      <li class="ligne right"><a href="deconnexion.php">Déconnexion</a></li>
+    </ul>
+  </div>
   <div class="marge">
-  <br>
     <h1>Modifier une question / Répondre</h1>
-
-    <h3>Question</h3>
-
-    <textarea name="question" id="question" rows="10" cols="50" >Est ce que le ballon est rond ?</textarea>
-
-    <h3>Réponse</h3>
-
-    <textarea name="reponse" id="reponse" rows="10" cols="50" >Bien sûr que oui</textarea>
-    <br></br>
     <form id="editer" action="liste.php" method="post">
+      <h3>Question</h3>
+      <textarea name="question" id="question" rows="10" cols="50" >Est ce que le ballon est rond ?</textarea>
+      <h3>Réponse</h3>
+      <textarea name="reponse" id="reponse" rows="10" cols="50" >Bien sûr que oui</textarea>
+      <br></br>
       <input type="submit" value="Confirmer"/>
       <input type="reset" value="Annuler" />
     </form>
-    </div>
-<footer>
+  </div>
+  <footer>
     <div class="footer">
       <ul class="foot_left">INFOS PRATIQUES</ul>
       <ul class="foot_right">CONTACT</ul>
-        </div>
+    </div>
   </footer>
 </body>
 </html>
