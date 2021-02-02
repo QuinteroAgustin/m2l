@@ -19,7 +19,12 @@
 <body>
 <h1>Maison des Ligues</h1>
 <h2>Déconnexion</h2>
+<center>
+<img src="../png/mdl (1).png" alt="Logo_page" title="Deconnexion" id="logo" class="centerpng"/>
+
 <p>Vous vous êtes bien déconnecté !</p>
 <form action="../index.php"><button type="submit" class="btn btn-primary">Retour à la page d'accueil</button></form>
+</center>
+
 </body>
 </html>

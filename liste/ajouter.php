@@ -16,7 +16,8 @@
     </div>
   <div class="marge">
 <br>
-<h2>Maison des Ligues</h2>
+<h1>Maison des Ligues</h1>
+<h2>Ajouter une question</h2>
 <form id="Ajout" action="liste.php" method="post">
   <label for="Question" >Ecrivez votre question :</label><br>
   <br>
