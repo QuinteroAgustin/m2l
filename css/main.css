@@ -86,9 +86,12 @@ div.footer {
 .foot_right {
   float: right;
   margin-right: 50px;
+  color: aliceblue;
 
 }
 
 .foot_left {
   float: left;
+  color: aliceblue;
+
 }
