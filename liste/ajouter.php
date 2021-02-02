@@ -26,7 +26,7 @@
       <input type="reset" value="Vider" />
     </form>
     <br>
-    <a href="ajouter.php"><input type="submit" value="Annuler"/></a>
+    <a href="liste.php"><input type="submit" value="Annuler"/></a>
   </div>
   <footer>
     <div class="footer">
