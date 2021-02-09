@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M2L - Connexion</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-  <div>
-    <ul class="navbar">
-      <li class="ligne left"><a class="tjaune" href="index.php">Accueil</a></li>
-      <li class="ligne left"><a href="liste/liste.php">FAQ</a></li>
-      <li class="ligne right"><a href="inscription.php">Inscription</a></li>
-      <li class="ligne right"><a class="active" href="connexion.php">Connexion</a></li>
-    </ul>
-  </div>
+<?php $active=4; $title = "Connexion"; require('header.php'); ?>
   <div class="center">
     <br>
     <h1>Se connecter</h1>
@@ -31,12 +13,4 @@
       <input type="submit" value="se connecter" class="box-button">
     </form>
   </div>
-<footer>
-    <div class="footer">
-      <ul class="foot_left">INFOS PRATIQUES</ul>
-      <ul class="foot_right">CONTACT</ul>
-        </div>
-  </footer>
-</body>
-
-</html>
+<?php require('footer.php'); ?>

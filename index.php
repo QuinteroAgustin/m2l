@@ -1,4 +1,4 @@
-<?php $title = "Accueil"; require('header.php'); ?>
+<?php $active=1; $title = "Accueil"; require('header.php'); ?>
     <br>
     <img src="img/logo.png" alt="logo">
     <br>
