@@ -1,8 +1,8 @@
-<?php $active=4; $title = "Connexion"; require('header.php'); ?>
+<?php $active=4; $title = "Connexion"; require('header.php'); require('sql.php'); ?>
   <div class="center">
     <br>
     <h1>Se connecter</h1>
-    <form action="index.php" methode="POST">
+    <form action="<?=$_SERVER['PHP_SELF'];?>" methode="POST">
       <label for="pseudo">Pseudo :</label>
       <input type="text" name="pseudo" id="pseudo">
       <br><br>
