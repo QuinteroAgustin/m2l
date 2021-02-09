@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M2L - Inscription</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <div>
-        <ul class="navbar">
-            <li class="ligne left"><a class="tjaune"href="index.php">Accueil</a></li>
-            <li class="ligne left"><a href="liste/liste.php">FAQ</a></li>
-            <li class="ligne right"><a class="active"href="inscription.php">Inscription</a></li>
-            <li class="ligne right"><a href="connexion.php">Connexion</a></li>
-        </ul>
-    </div>
+<?php $active=3; $title = "Inscription"; require('header.php'); require('sql.php'); ?>
     <div class="center">
-    <br>
         <h1>S'inscrire</h1>
         <form action="validation.php" method="post">
             <label for="pseudo">*Pseudo : </label>
@@ -44,12 +27,7 @@
             <input type="submit" value="S'inscrire">
         </form>
     </div>
-<footer>
-    <div class="footer">
-      <ul class="foot_left">INFOS PRATIQUES</ul>
-      <ul class="foot_right">CONTACT</ul>
-    </div>
-</footer>
+<?php require('footer.php'); ?>
 
 <?php
 
@@ -97,8 +75,4 @@ if (isset($_POST['submit'])) {
 
 else echo "Veuillez saisir tous les champs";
 }
-
 ?>
-
-</body>
-</html>
