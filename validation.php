@@ -2,14 +2,15 @@
   $servername="127.0.0.1";
   $username="maison2ligue";
   $password="Maisondeuxligues";
+  $dbname = "m2l"
   //créer une connexion PDO
-  $conn= new mysqli($servername, $username, $password);
+  $c = new mysqli($servername, $username, $password, $dbname);
   //test connexion
-  if($conn->connect_error){
-    die("Connexion échoué".$conn->connect_error);
+  if($c->connect_error){
+    die("Connexion échoué".$c->connect_error);
   }
   $sql="USE m2l";
-  $result = $conn->query($sql);
+  $result = $c->query($sql);
 
   $pseudo = $_POST['pseudo'];
   $email = $_POST['email'];
@@ -22,11 +23,11 @@
         if($ligue == 1 || $ligue == 2 || $ligue == 3 || $ligue == 4){
             if(strlen($password)>= 8 && $password === $password2){
                 $sql="INSERT INTO user (pseudo, mdp, mail, id_ligue) VALUES (".$pseudo.",".$password.",".$email.",".$ligue.")";
-                $conn->query($sql);
+                $c->query($sql);
                 echo "User créer avec success";
 
             }else{
-                echo 'Le mot de passe est invalid ou trop court</br>';
+                echo 'Le mot de passe est invalide ou trop court</br>';
             }
         }else{
             echo 'La ligue '.$ligue.' est invalid</br>';
