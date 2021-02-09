@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title; ?> - M2L</title>
     <link rel="stylesheet" href="/m2l/css/main.css">
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="/m2l/img/logo.png">
 </head>
 <body>
 <div>
