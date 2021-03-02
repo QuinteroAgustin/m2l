@@ -1,8 +1,6 @@
 <?php $active=3; $title = "Inscription"; require('header.php'); require('sql.php'); ?>
-    <div class="center">
-        
-    </div>
-<?php require('footer.php'); ?>
+
+
 
 <?php
 require('config.php');
@@ -28,9 +26,10 @@ if (isset($_REQUEST['pseudo'], $_REQUEST['email'], $_REQUEST['password'], $_REQU
 			 </div>";
     }
 }else{
-?>
-<h1>S'inscrire</h1>
-        <form action="" method="post">
+?>    
+<div class="center">
+ <h1>S'inscrire</h1>
+        <form action="index.php" method="post">
             <label for="pseudo">*Pseudo : </label>
             <input type="text" id="pseudo" name="pseudo">
             <br><br>
@@ -55,4 +54,6 @@ if (isset($_REQUEST['pseudo'], $_REQUEST['email'], $_REQUEST['password'], $_REQU
             <p><a href="connexion.php">Déjà inscrit ?</a></p></body>
             <input type="submit" value="S'inscrire">
         </form>
-<?php } ?>
+ <?php } ?>
+</div>
+<?php require('footer.php'); ?>
