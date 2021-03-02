@@ -2,6 +2,7 @@
 <?php
   $pseudo=isset($_POST['pseudo']) ? $_POST['pseudo'] :  "";
   $password=isset($_POST['password']) ? $_POST['password'] :  "";
+  
 ?>
   <div class="center">
     <br>
