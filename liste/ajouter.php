@@ -11,4 +11,4 @@
   </form>
   <br>
   <a href="liste.php"><input type="submit" value="Annuler"/></a>
-<?php require('../footer.php'); ?>
+<?php require('../footer.php'); ?> 
