@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
                 $c = new mysqli("127.0.0.1","root","","m2l");
 
                 /*On crée la requête*/
-                $sql = "INSERT INTO user (pseudo, mdp, mail, id_ligue) VALUES (NULL,'".$_POST['pseudo']."','".$_POST['password']."','".$_POST['mail']."')";
+                $sql = "INSERT INTO user (pseudo, mdp, mail, id_ligue) VALUES ('".$_POST['pseudo']."','".$_POST['password']."','".$_POST['mail']."')";
 
                 /*Exécute et affiche l'erreur mysql si elle se produit*/
                 if(!$c->query($sql)) {
