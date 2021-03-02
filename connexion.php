@@ -1,4 +1,11 @@
 <?php $active=4; $title = "Connexion"; require('header.php'); require('sql.php'); ?>
+<<<<<<< HEAD
+<?php
+  $pseudo=isset($_POST['pseudo']) ? $_POST['pseudo'] :  "";
+  $password=isset($_POST['password']) ? $_POST['password'] :  "";
+  
+?>
+=======
  <?php
   // Démarre la session
   session_start(); 
@@ -19,6 +26,7 @@
     }
   }
   ?>
+>>>>>>> a85c6fc9e3beea5a35c628236ca1380a26f8bb2d
   <div class="center">
     <br>
     <h1>Se connecter</h1>

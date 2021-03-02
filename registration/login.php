@@ -5,7 +5,7 @@
 </head>
 <body>
 <?php
-require('config.php');
+require('../config.php');
 session_start();
 
 if (isset($_POST['username'])){

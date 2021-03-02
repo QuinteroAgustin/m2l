@@ -1,5 +1,5 @@
 <?php
-    $dns='mysql:host=127.0.0.1;dbname=m2l';
+  $dns='mysql:host=127.0.0.1;dbname=m2l';
   $username="maison2ligue";
   $password="Maisondeuxligues";
   //créer une connexion PDO
