@@ -1,7 +1,36 @@
 <?php $active=3; $title = "Inscription"; require('header.php'); require('sql.php'); ?>
     <div class="center">
-        <h1>S'inscrire</h1>
-        <form action="validation.php" method="post">
+        
+    </div>
+<?php require('footer.php'); ?>
+
+<?php
+require('config.php');
+if (isset($_REQUEST['pseudo'], $_REQUEST['email'], $_REQUEST['password'], $_REQUEST['password2'])){
+	// récupérer le nom d'utilisateur et supprimer les antislashes ajoutés par le formulaire
+	$pseudo = stripslashes($_REQUEST['pseudo']);
+	$pseudo = mysqli_real_escape_string($conn, $pseudo); 
+	// récupérer l'email et supprimer les antislashes ajoutés par le formulaire
+	$email = stripslashes($_REQUEST['email']);
+	$email = mysqli_real_escape_string($conn, $email);
+	// récupérer le mot de passe et supprimer les antislashes ajoutés par le formulaire
+	$password = stripslashes($_REQUEST['password']);
+	$password = mysqli_real_escape_string($conn, $password);
+	//requête SQL + mot de passe crypté
+    $query = "INSERT into `user` (pseudo, email, password)
+              VALUES ('$pseudo', '$email', '".hash('sha256', $password)."')";
+	// Exécute la requête sur la base de données
+    $res = mysqli_query($conn, $query);
+    if($res){
+       echo "<div class='sucess'>
+             <h3>Vous êtes inscrit avec succès.</h3>
+             <p>Cliquez ici pour vous <a href='connexion.php'>connecter</a></p>
+			 </div>";
+    }
+}else{
+?>
+<h1>S'inscrire</h1>
+        <form action="" method="post">
             <label for="pseudo">*Pseudo : </label>
             <input type="text" id="pseudo" name="pseudo">
             <br><br>
@@ -26,53 +55,4 @@
             <p><a href="connexion.php">Déjà inscrit ?</a></p></body>
             <input type="submit" value="S'inscrire">
         </form>
-    </div>
-<?php require('footer.php'); ?>
-
-<?php
-
-$pseudo = isset($_POST['pseudo']) ? $_POST['pseudo'] : '';
-$email = isset($_POST['email']) ? $_POST['email'] : '';
-$password = isset($_POST['password']) ? $_POST['password'] : '';
-$password2 = isset($_POST['password2']) ? $_POST['password2'] : '';
-$ligue = isset($_POST['ligue']) ? $_POST['ligue'] : '';
-$submit = isset($_POST['submit']);
-
-if (isset($_POST['submit'])) {
-
-    /*On teste si tous les champs sont bien remplis*/
-    if(!empty($_POST['pseudo']) and !empty($_POST['email']) and !empty($_POST['password']) and !empty($_POST['password2'])) {
-
-        /*On teste si le mot de passe contient bien au moins 6 caractères*/
-        if(strlen($_POST['password'])>=6) {
-
-            /*On teste si les 2 mots de passe sont bien identiques*/
-            if ($_POST['password']==$_POST['password2']) {
-
-                /*On crypte le mot de passe*/
-                $_POST['password']=md5($_POST['password']);
-
-                /*On se connecte à MySQL et on sélectionne la base*/
-                $c = new mysqli("127.0.0.1","root","","m2l");
-
-                /*On crée la requête*/
-                $sql = "INSERT INTO user (pseudo, mdp, mail, id_ligue) VALUES ('".$_POST['pseudo']."','".$_POST['password']."','".$_POST['mail']."')";
-
-                /*Exécute et affiche l'erreur mysql si elle se produit*/
-                if(!$c->query($sql)) {
-                    printf("Message d'erreur : %s\n", $c->error);
-                }
-
-            /*On ferme la connexion*/
-            mysqli_close($c);
-            }
-
-        else echo "Les mots de passe ne sont pas identiques";
-        }
-    
-    else echo "Le mot de passe est trop court";
-    }
-
-else echo "Veuillez saisir tous les champs";
-}
-?>
+<?php } ?>
