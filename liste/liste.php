@@ -26,5 +26,5 @@
         </tr>
     </table>
     <br>
-    <img src="../img/add.png" alt="add" form action="ajouter.php"><button type="submit" class="btn btn-primary">Ajouter une question</button></form>
+    <form action="ajouter.php"><button type="submit" class="btn btn-primary">Ajouter une question <img src="../img/add.png" alt="add"></button></form>
 <?php require('../footer.php'); ?>
