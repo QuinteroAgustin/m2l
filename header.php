@@ -30,8 +30,8 @@
         <div class="popup"> 
             <?php
                 if(isset($_SESSION['messages'])){
-                    foreach($_SESSION['messages'] as $value){
-                        echo "<p>".$value."</p>";
+                    foreach($_SESSION['messages'] as $key=>$value){
+                        echo "<p>".$key." : ".$value."</p>";
                     }
                     unset($_SESSION['messages']);
                 }
