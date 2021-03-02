@@ -74,7 +74,7 @@ table {
 /* footer */
 
 div.footer {
-    position: absolute;
+    position: fixed;
     line-height: 15px;
     bottom: 0;
     width: 100%;
