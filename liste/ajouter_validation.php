@@ -1,4 +1,5 @@
 <?php
+require('sql.php');
 $sql ="insert into faq (question,id_user)";
 $sql.="values (:question,:id_user)";
 try {
