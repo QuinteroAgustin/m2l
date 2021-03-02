@@ -1,14 +1,14 @@
 <?php
 // Informations d'identification
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'registration');
+define('DB_SERVER', '127.0.0.1');
+define('DB_USERNAME', 'maison2ligue');
+define('DB_PASSWORD', 'Maisondeuxligues');
+define('DB_NAME', 'm2l');
  
-// Connexion à la base de données MySQL 
-$conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+// Connexion a la base de donnees MySQL 
+$conn = mysqli_connect('127.0.0.1', 'maison2ligue', 'Maisondeuxligues', 'm2l');
  
-// Vérifier la connexion
+// Verifier la connexion
 if($conn === false){
     die("ERREUR : Impossible de se connecter. " . mysqli_connect_error());
 }
