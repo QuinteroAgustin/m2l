@@ -1,4 +1,4 @@
-<?php $active=3; $title = "Inscription"; require('header.php'); require('sql.php'); ?>
+<?php $active=3; $title = "Inscription"; require('header.php'); ?>
     <div class="center">
         <h1>S'inscrire</h1>
             <form action="index.php" method="post">
