@@ -8,7 +8,7 @@ try {
     ':id_user' => $_SESSION['user']['id_user']
   ));
 } catch (PDOException $ex){
-  die("Erreur lors de la rêquete SQL : ".$ex->getMessage());)
+  die("Erreur lors de la rêquete SQL : ".$ex->getMessage());
 }
 echo "<p>".$sth->rowcount()."enregistrement ajouté </p>";
 ?>
