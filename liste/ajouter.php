@@ -1,17 +1,4 @@
 <?php $active=2; $title = "Ajouter"; require('../header.php'); ?>
-<?php
-$sql ="insert into faq (id_faq,question,dat_question,id_user)";
-$sql.="values (:id_faq,;question,;dat_question,;id_user)";
-try {
-  $sth = $dbh->prepare($sql);
-  $sth->execute(array(
-    ':id_faq' => "",
-    ':question' => "",
-    ':dat_question' => "",
-    ':id_user' => ""
-  ));
-}
-?>
   <h1>Maison des Ligues</h1>
   <h2>Ajouter une question à la FAQ</h2>
   <form id="Ajout" action="liste.php" method="post">
