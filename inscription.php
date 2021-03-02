@@ -1,35 +1,6 @@
 <?php $active=3; $title = "Inscription"; require('header.php'); require('sql.php'); ?>
     <div class="center">
-        
-    </div>
-<?php require('footer.php'); ?>
-
-<?php
-require('config.php');
-if (isset($_REQUEST['pseudo'], $_REQUEST['email'], $_REQUEST['password'], $_REQUEST['password2'])){
-	// récupérer le nom d'utilisateur et supprimer les antislashes ajoutés par le formulaire
-	$pseudo = stripslashes($_REQUEST['pseudo']);
-	$pseudo = mysqli_real_escape_string($conn, $pseudo); 
-	// récupérer l'email et supprimer les antislashes ajoutés par le formulaire
-	$email = stripslashes($_REQUEST['email']);
-	$email = mysqli_real_escape_string($conn, $email);
-	// récupérer le mot de passe et supprimer les antislashes ajoutés par le formulaire
-	$password = stripslashes($_REQUEST['password']);
-	$password = mysqli_real_escape_string($conn, $password);
-	//requête SQL + mot de passe crypté
-    $query = "INSERT into `user` (pseudo, email, password)
-              VALUES ('$pseudo', '$email', '".hash('sha256', $password)."')";
-	// Exécute la requête sur la base de données
-    $res = mysqli_query($conn, $query);
-    if($res){
-       echo "<div class='sucess'>
-             <h3>Vous êtes inscrit avec succès.</h3>
-             <p>Cliquez ici pour vous <a href='connexion.php'>connecter</a></p>
-			 </div>";
-    }
-}else{
-?>
-<h1>S'inscrire</h1>
+        <h1>S'inscrire</h1>
         <form action="" method="post">
             <label for="pseudo">*Pseudo : </label>
             <input type="text" id="pseudo" name="pseudo">
@@ -55,4 +26,6 @@ if (isset($_REQUEST['pseudo'], $_REQUEST['email'], $_REQUEST['password'], $_REQU
             <p><a href="connexion.php">Déjà inscrit ?</a></p></body>
             <input type="submit" value="S'inscrire">
         </form>
-<?php } ?>
+    </div>
+<?php require('footer.php'); ?>
+        

@@ -1,4 +1,6 @@
-<?php $active=4; $title = "Déconnexion"; require('../header.php'); ?>
+<?php $active=4; $title = "Déconnexion"; require('../header.php'); 
+    session_unset();
+?>
     <div class="center">
         <h1>Maison des Ligues</h1>
         <h2>Déconnexion</h2>

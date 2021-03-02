@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,8 +15,15 @@
         <ul class="navbar">
             <li class="ligne left"><a class="tjaune <?php if($active==1){echo"active";}?>"href="/m2l/index.php">Accueil</a></li>
             <li class="ligne left"><a class="<?php if($active==2){echo"active";}?>" href="/m2l/liste/liste.php">FAQ</a></li>
-            <li class="ligne right"><a class="<?php if($active==3){echo"active";}?>" href="/m2l/inscription.php">Inscription</a></li>
-            <li class="ligne right"><a class="<?php if($active==4){echo"active";}?>" href="/m2l/connexion.php">Connexion</a></li>
+            <?php
+                if(isset($_SESSION['user'])){ ?>
+                    <li class="ligne right"><a class="<?php if($active==4){echo"active";}?>" href="/m2l/liste/deconnexion.php">Déconnexion</a></li>
+                <?php }else{ ?>
+                    <li class="ligne right"><a class="<?php if($active==3){echo"active";}?>" href="/m2l/inscription.php">Inscription</a></li>
+                    <li class="ligne right"><a class="<?php if($active==4){echo"active";}?>" href="/m2l/connexion.php">Connexion</a></li>
+                <?php }
+            ?>
+            
         </ul>
     </div>
     <div class="marge">
