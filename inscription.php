@@ -13,7 +13,7 @@
             <br><br>
             <label for="password2">*Confirmer le mot de passe : </label>
             <input type="password" id="password2" name="password2">
-            <br><br>
+            <br><br> 
             <label for="ligue">*Ligue : </label>
             <select name="ligue" id="ligue">
                 <option value="1" selected="selected">Ligue de basket</option>
