@@ -5,6 +5,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+
 }
 li.ligne {
     display: inline;
@@ -74,13 +75,13 @@ table {
 /* footer */
 
 div.footer {
-    position: fixed;
     line-height: 15px;
     bottom: 0;
     width: 100%;
     background-color: #333;
-    position: fixed;
+    position: fixed ;
     padding:10px;
+    margin-top: 10px;
 }
 
 .foot_right {
