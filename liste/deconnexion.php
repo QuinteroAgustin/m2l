@@ -3,4 +3,5 @@
     $_SESSION['messages']=array(
         "deconnexion" => "Vous vous etes bien déconnecté"
     );
+    header("Location: ../index.php");
 ?>
