@@ -18,5 +18,5 @@
     $_SESSION['messages']=array(
         "connexion" => "Vous vous etes bien connecté"
     );
-    
+    header("Location: index.php");
 ?>

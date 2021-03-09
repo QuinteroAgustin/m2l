@@ -15,4 +15,5 @@
   $_SESSION['messages']=array(
     "FAQ" => "Un nouveaux message à été ajouté"
   );
+  header("Location: liste.php");
 ?>
