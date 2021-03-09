@@ -22,7 +22,7 @@
                 );
                 header("Location: index.php");
             }else{
-                $_SESSION['messages']=array("Accunt" => "Ces identifiants sont incorrecte");
+                $_SESSION['messages']=array("Account" => "Ces identifiants sont incorrecte");
                 header("Location: connexion.php");
             }
             

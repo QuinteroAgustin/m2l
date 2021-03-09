@@ -1,7 +1,7 @@
 <?php $active=3; $title = "Inscription"; require('header.php'); ?>
     <div class="center">
         <h1>S'inscrire</h1>
-            <form action="index.php" method="post">
+            <form action="inscription_validation.php" method="post">
                 <label for="pseudo">*Pseudo : </label>
                 <input type="text" id="pseudo" name="pseudo">
                 <br><br>
@@ -24,7 +24,7 @@
                 <br>
                 <p>* : Champs obligatoires</p>
                 <p><a href="connexion.php">Déjà inscrit ?</a></p></body>
-                <input type="submit" value="S'inscrire">
+                <input name="submit" type="submit" value="S'inscrire">
             </form>
     </div>
 <?php require('footer.php'); ?>
