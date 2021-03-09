@@ -18,14 +18,4 @@
     $_SESSION['messages']=array(
         "connexion" => "Vous vous etes bien connecté"
     );
-    
 ?>
-    <div class="center">
-        <h1>Maison des Ligues</h1>
-        <h2>Connexion</h2>
-        <img src="img/logo.png" alt="Logo_page" title="Connexion" id="logo" class="centerpng"/>
-
-        <p>Vous vous êtes bien connecté <?= $_SESSION["user"]["pseudo"]; ?> !</p>
-        <a href="index.php"><input type="submit" value="Retour à la page d'accueil"></a>
-    </div>
-<?php require('footer.php'); ?>
