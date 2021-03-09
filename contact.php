@@ -1,4 +1,4 @@
-<?php require('header.php'); ?>
+<?php $active=5; $title = "Contact"; require('header.php'); ?>
 
 <div class="marge">
 

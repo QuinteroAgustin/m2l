@@ -1,4 +1,4 @@
-<?php $active=4; $title = "Connexion"; require('header.php');?>
+<?php $active=4; $title ="Connexion"; require('header.php');?>
   <div class="center">
     <h1>Se connecter</h1>
     <form action="connexion_validation.php" method="post">
