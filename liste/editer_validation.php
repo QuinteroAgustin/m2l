@@ -10,7 +10,7 @@ $reponse=$_POST['reponse']?$_POST['reponse']:null;
           $sth = $dbh->prepare($sql);
           $sth->execute(array(
             ':question' => $question,
-            ':question' => $question,
+            ':reponse' => $reponse,
             ':id' => $id
           ));
         } catch (PDOException $ex){
