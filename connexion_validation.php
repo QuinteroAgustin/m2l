@@ -14,8 +14,8 @@
             } catch (PDOException $ex) {
                 die("Erreur lors de la requête SQL : " . $ex->getMessage());
             }
-            $password=password_hash($password, PASSWORD_BCRYPT);
-            if($pseudo === $user['pseudo'] && $password===$user['mdp']){
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+            if($pseudo === $user['pseudo'] && password_verify($password,$hashed_password)){
                 unset($user["mdp"]);
                 $_SESSION['user']=$user;
                 $_SESSION['messages']=array(
