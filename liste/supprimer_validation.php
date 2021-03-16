@@ -13,7 +13,7 @@ if($submit){
         die("Erreur lors de la rêquete SQL : ".$ex->getMessage());
     }
     $_SESSION['messages']=array(
-        "FAQ" => "Le message à été supprimé"
+        "FAQ" => "Le message a été supprimé"
     );
 }
 header("Location: liste.php");

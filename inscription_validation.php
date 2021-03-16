@@ -42,7 +42,7 @@
                         );
                         header("Location: connexion.php");
                     }else{
-                        $_SESSION['messages']=array("Password" => "Cette utilisateur ou email existe déjà.");
+                        $_SESSION['messages']=array("Password" => "Cet utilisateur ou email existe déjà.");
                         header("Location: inscription.php");
                     }
                 }else{
@@ -50,11 +50,11 @@
                     header("Location: inscription.php");
                 }
             }else{
-            $_SESSION['messages']=array("Password" => "Vous avez rentrez un mot de passe trop court");
+            $_SESSION['messages']=array("Password" => "Vous avez rentré un mot de passe trop court");
             header("Location: inscription.php");
             }
         }else{
-            $_SESSION['messages']=array("Pseudo" => "Vous avez rentrez un pseudo trop court");
+            $_SESSION['messages']=array("Pseudo" => "Vous avez rentré un pseudo trop court");
             header("Location: inscription.php");
         }
     }else{

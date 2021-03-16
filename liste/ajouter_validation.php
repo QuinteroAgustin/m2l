@@ -13,7 +13,7 @@
     die("Erreur lors de la rêquete SQL : ".$ex->getMessage());
   }
   $_SESSION['messages']=array(
-    "FAQ" => "Un nouveaux message à été ajouté"
+    "FAQ" => "Un nouveau message a été ajouté"
   );
   header("Location: liste.php");
 ?>
