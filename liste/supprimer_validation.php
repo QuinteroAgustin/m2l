@@ -12,6 +12,9 @@ if($submit){
     } catch (PDOException $ex){
         die("Erreur lors de la rêquete SQL : ".$ex->getMessage());
     }
+    $_SESSION['messages']=array(
+        "FAQ" => "Le message à été supprimé"
+    );
 }
 header("Location: liste.php");
 ?>
