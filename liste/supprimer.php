@@ -23,7 +23,8 @@ if(isset($_GET['id'])){
     <h3>Réponse</h3>
     <textarea name="reponse" id="reponse" rows="10" cols="50" disabled="disabled" ><?= $question['reponse'];?></textarea>
     <br></br>
-    <input type="submit" value="Confirmer"/>
+    <input type="text" name="id" value="<?=$id?>" hidden/>
+    <input type="submit" name="submit" value="Confirmer"/>
   </form>
   <br>
   <a href="liste.php"><input type="submit" value="Retour"></a>
