@@ -43,7 +43,7 @@
                     } catch (PDOException $ex) {
                         die("Erreur lors de la requête SQL : " . $ex->getMessage());
                     }
-                    if($_SESSION['user']['id_ligue']==$id_lig){
+                    if($_SESSION['user']['id_ligue']==$id_lig['id_ligue'] || $_SESSION['user']['id_usertype'] == 3){
                         echo "<td><a href='editer.php'>Modifier</a></td>";
                         echo "<td><a href='supprimer.php'>Supprimer</a></td>";
                     }
