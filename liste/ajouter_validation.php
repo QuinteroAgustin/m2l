@@ -1,8 +1,8 @@
 <?php
   $active=2; $title = "Ajouter"; require('../header.php'); require('../sql.php');
   $question=isset($_POST['question']) ? $_POST['question'] :  "";
-  $sql ="insert into faq (question,id_user)";
-  $sql.="values (:question,:id_user)";
+  $sql ="insert into faq (question,id_user, dat_question)";
+  $sql.="values (:question,:id_user, CURRENT_TIMESTAMP)";
   try {
     $sth = $dbh->prepare($sql);
     $sth->execute(array(
