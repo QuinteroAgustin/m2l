@@ -27,13 +27,17 @@
         </ul>
     </div>
     <div class="marge">
+        <?php
+        if(isset($_SESSION['messages'])){?>
         <div class="popup"> 
             <?php
-                if(isset($_SESSION['messages'])){
-                    foreach($_SESSION['messages'] as $key=>$value){
-                        echo "<p>".$key." : ".$value."</p>";
-                    }
-                    unset($_SESSION['messages']);
-                }
+            foreach($_SESSION['messages'] as $key=>$value){
+                echo "<p><strong>".$key."</strong> : ".$value."</p>";
+            }
+            unset($_SESSION['messages']);
             ?>
-        </div>
+            </div>
+        <?php
+        }
+        ?>
+       
