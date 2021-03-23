@@ -1,4 +1,4 @@
-<!-- Permet la connexion del à la base de donnée  -->
+<!-- Permet la connexion à la base de donnée  -->
 <?php
   $dsn='mysql:host=127.0.0.1;dbname=m2l';
   $username="maison2ligue";

@@ -1,5 +1,6 @@
 <?php $active=2; $title = "Editer"; require('../header.php'); require('../sql.php') ?>
 <?php
+
 $submit=$_POST['submit']?$_POST['submit']:null;
 $id=$_POST['id']?$_POST['id']:null;
 $question=$_POST['question']?$_POST['question']:null;
