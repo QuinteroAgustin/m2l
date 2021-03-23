@@ -29,7 +29,7 @@ Dossier partagé M2L
   * deconnexion.php :
 
 # Mise en page du site
-* **Le hearder**
+* **Le header**
   * hearder.php :
 * **Le footer**
   * footer.php :  
@@ -72,11 +72,4 @@ Dossier partagé M2L
 ### Utilisateur pour la ligue de foot
 * pseudo: uservolley1 /  uservolley2   
 * mot de passe: uservolley1 / uservolley2
-
-
-
-
-
-
-
 
