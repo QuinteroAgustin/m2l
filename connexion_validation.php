@@ -25,21 +25,21 @@
                 unset($user["mdp"]);
                 $_SESSION['user']=$user;
                 $_SESSION['messages']=array(
-                    "connexion" => "Vous vous êtes bien connecté"
+                    "connexion" => ["green", "Vous vous êtes bien connecté"]
                 );
                 //Redirige vers l'accueil si connexion réussie
                 header("Location: index.php");
             //Cas où la connexion échoue
             }else{
-                $_SESSION['messages']=array("Account" => "Ces identifiants sont incorrects");
+                $_SESSION['messages']=array("Account" => ["red", "Ces identifiants sont incorrects"]);
                 header("Location: connexion.php");
             }
         }else{
-            $_SESSION['messages']=array("Password" => "Vous avez rentré un mot de passe trop court");
+            $_SESSION['messages']=array("Password" => ["red", "Vous avez rentré un mot de passe trop court"]);
             header("Location: connexion.php");
         }
     }else{
-        $_SESSION['messages']=array("Pseudo" => "Vous avez rentré un pseudo trop court");
+        $_SESSION['messages']=array("Pseudo" => ["red", "Vous avez rentré un pseudo trop court"]);
         header("Location: connexion.php");
     }
 ?>

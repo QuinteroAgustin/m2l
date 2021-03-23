@@ -18,7 +18,7 @@ $reponse=$_POST['reponse']?$_POST['reponse']:null;
           die("Erreur lors de la rêquete SQL : ".$ex->getMessage());
         }
         $_SESSION['messages']=array(
-          "FAQ" => "Le message a été modifié"
+          "FAQ" => ["blue", "Le message a été modifié"]
         );
     }
     header("Location: liste.php");

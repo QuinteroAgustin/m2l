@@ -28,17 +28,14 @@
     </div>
     <div class="marge">
         <?php
-        if(isset($_SESSION['messages'])){?>
-        <div class="popup"> 
-            <?php
+        if(isset($_SESSION['messages'])){
             // Permet d'afficher les nouveaux messages
             foreach($_SESSION['messages'] as $key=>$value){
-                echo "<p><strong>".$key."</strong> : ".$value."</p>";
+                echo '<div class="popup '. $value[0].'">';
+                echo "<p><strong>".$key."</strong> : ".$value[1]."</p>";
             }
             unset($_SESSION['messages']);
-            ?>
-            </div>
-        <?php
+            echo "</div>";
         }
         ?>
        

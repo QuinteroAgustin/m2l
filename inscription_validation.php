@@ -50,28 +50,28 @@
                         }
 
                         $_SESSION['messages']=array(
-                            "inscription" => "Vous vous êtes bien inscrit !"
+                            "inscription" => ["green", "Vous vous êtes bien inscrit !"]
                         );
                         header("Location: connexion.php");
                     } //Cas où la connexion échoue
                     else{
-                        $_SESSION['messages']=array("Password" => "Cet utilisateur ou email existe déjà.");
+                        $_SESSION['messages']=array("Password" => ["red", "Cet utilisateur ou email existe déjà."]);
                         header("Location: inscription.php");
                     }
                 }else{
-                    $_SESSION['messages']=array("Password" => "Les mots de passe ne sont pas identiques");
+                    $_SESSION['messages']=array("Password" => ["red", "Les mots de passe ne sont pas identiques"]);
                     header("Location: inscription.php");
                 }
             }else{
-            $_SESSION['messages']=array("Password" => "Vous avez rentré un mot de passe trop court");
+            $_SESSION['messages']=array("Password" => ["red", "Vous avez rentré un mot de passe trop court"]);
             header("Location: inscription.php");
             }
         }else{
-            $_SESSION['messages']=array("Pseudo" => "Vous avez rentré un pseudo trop court");
+            $_SESSION['messages']=array("Pseudo" => ["red", "Vous avez rentré un pseudo trop court"]);
             header("Location: inscription.php");
         }
     }else{
-        $_SESSION['messages']=array("tt" => "tt");
+        $_SESSION['messages']=array("submit" => ["red", "non soumis"]);
         header("Location: inscription.php");
     }
 ?>

@@ -18,7 +18,7 @@
   }
   // Met un message dans la session message 
   $_SESSION['messages']=array(
-    "FAQ" => "Un nouveau message a été ajouté"
+    "FAQ" => ["green", "Un nouveau message a été ajouté"]
   );
   //Redirige vers l'accueil
   header("Location: liste.php");

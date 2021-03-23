@@ -114,7 +114,15 @@ font-weight: 100;
 .popup{
     margin-top: 30px;
     padding: 5px;
-    background-color: #f44336; /* Red */
     color: white;
     margin-bottom: 15px;
+}
+.red{
+    background-color: #f44336; /* Red */
+} 
+.green{
+    background-color: #4CAF50; /* green */
+}
+.orange{
+    background-color: #2196F3; /* blue */
 }

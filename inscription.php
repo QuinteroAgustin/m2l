@@ -17,10 +17,10 @@
                 <br><br> 
                 <label for="ligue">*Ligue : </label>
                 <select name="ligue" id="ligue">
-                    <option value="1" selected="selected">Ligue de basket</option>
-                    <option value="2">Ligue de volley</option>
-                    <option value="3">Ligue de handball</option>
-                    <option value="4">Ligue de football</option>
+                    <option value="2" selected="selected">Ligue de basket</option>
+                    <option value="3">Ligue de volley</option>
+                    <option value="4">Ligue de handball</option>
+                    <option value="5">Ligue de football</option>
                 </select>
                 <br>
                 <p>* : Champs obligatoires</p>
