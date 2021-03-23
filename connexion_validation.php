@@ -21,10 +21,7 @@
             catch (PDOException $ex) {
                 die("Erreur lors de la requête SQL : " . $ex->getMessage());
             }
-            //Le mot de passe est de nouveau crypté lors de la saisie
-            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-            //pour le comparer avec celui enregistré lors de l'inscription
-            if($pseudo === $user['pseudo'] && password_verify($password,$hashed_password)){
+            if($pseudo === $user['pseudo'] && password_verify($password,$user['mdp'])){
                 unset($user["mdp"]);
                 $_SESSION['user']=$user;
                 $_SESSION['messages']=array(
