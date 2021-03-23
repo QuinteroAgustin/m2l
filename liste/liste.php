@@ -1,4 +1,5 @@
 <?php $active=2; $title = "Liste"; require('../header.php'); require('../sql.php');
+//requete sql qui demande l'idfaq 
     $sql="SELECT id_faq, pseudo, question, dat_question, reponse, dat_reponse FROM faq, user WHERE faq.id_user = user.id_user";
     try {
         $sth = $dbh->query($sql);
