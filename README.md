@@ -3,46 +3,46 @@ Dossier partagé M2L
 
 # Pages du site accessibles sans connexion
 * **Inscription**
-  * inscription.php :
-   * inscription_validation.php :
+  * inscription.php
+   * inscription_validation.php
 * **Connexion**
-  * connexion.php :
-  * connexion_validation.php : 
+  * connexion.php
+  * connexion_validation.php
 * **Contact**
-  * contact.php :
+  * contact.php
 * **Page d'accueil** 
-  * index.php : 
+  * index.php
 
 # Pages du site accessibles après la connexion
 * **Liste des questions**
-  * liste.php :
+  * liste.php
 * **Ajouts de question**
-  * ajouter.php :
-  * ajouter_validation.php : 
+  * ajouter.php
+  * ajouter_validation.php 
 * **Suppression des questions**
-  * supprimer.php :
-  * supprimer_validation.php : 
+  * supprimer.php 
+  * supprimer_validation.php 
 * **Modifier une question** 
-  * editer.php : 
-  * editer_validation.php : 
+  * editer.php  
+  * editer_validation.php  
 * **Déconnexion**
-  * deconnexion.php :
+  * deconnexion.php 
 
 # Mise en page du site
 * **Le hearder**
-  * hearder.php :
+  * hearder.php 
 * **Le footer**
-  * footer.php :  
+  * footer.php   
 * **Le CSS**
-  * css/main.css : 
+  * css/main.css  
 
 # Base de donnée
 * **Page sql**
-  * sql.php :  
+  * sql.php   
 
 # Images
 * **Dossier pour les images**
-  * img :
+  * img 
 
 # Users permettant de se connecter au site de la M2L           
 ## Superadministrateur
