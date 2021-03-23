@@ -31,6 +31,7 @@
         if(isset($_SESSION['messages'])){?>
         <div class="popup"> 
             <?php
+            // Permet d'afficher les nouveaux messages
             foreach($_SESSION['messages'] as $key=>$value){
                 echo "<p><strong>".$key."</strong> : ".$value."</p>";
             }
