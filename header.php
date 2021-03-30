@@ -9,8 +9,7 @@
     <title><?= $title; ?> - M2L</title>
     <link rel="stylesheet" href="/m2l/css/main.css">
     <link rel="icon" href="/m2l/img/logo.png">
-    <img src="img/ligue_foot.png" alt="">
-    <img src="img/ligue_volley.png" alt="">
+    <img src="img/admin.jps" alt="">
 </head>
 <body>
 <div>
