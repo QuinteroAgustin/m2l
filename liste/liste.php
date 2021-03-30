@@ -45,7 +45,7 @@
                     echo "<td>".$question["reponse"]."</td>";
                     echo "<td>".$question["dat_reponse"]."</td>";
                     if($_SESSION['user']['id_usertype']>1){
-                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'>Modifier</a></td>";
+                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'>Répondre</a></td>";
                         echo "<td><a href='supprimer.php?id=".$question["id_faq"]."'>Supprimer</a></td>";
                     }
                     echo "</tr>";
