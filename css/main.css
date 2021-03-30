@@ -7,6 +7,11 @@ body {
     padding: 0;
 
 }
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+  }
 li.ligne {
     display: inline;
 }
@@ -51,15 +56,6 @@ li a:hover {
     padding: 20px;
     margin-bottom: 100px;
 }
-table {
-    border: medium solid #000000;
-    width: 100%;
-    }
-    td, th {
-    border: thin solid #000000;
-    width: 30%;
-    text-align: center;
-    }
 .center {
     text-align: center;
     margin-top: 60px;
@@ -117,12 +113,74 @@ font-weight: 100;
     color: white;
     margin-bottom: 15px;
 }
-.red{
-    background-color: #f44336; /* Red */
-} 
-.green{
-    background-color: #4CAF50; /* green */
+.form{
+    padding-left: 15%;
+    width: 100%;
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
 }
-.blue{
-    background-color: #2196F3; /* blue */
+.form input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
+.form input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+}
+.faq{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.faq td, th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.faq th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.faq tr:nth-child(even){
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.faq tr:hover {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.green {background-color: #4CAF50;} /* Green */
+.blue {background-color: #008CBA;} /* Blue */
+.red {background-color: #f44336;} /* Red */
+.grey {background-color: #e7e7e7; color: black;} /* Gray */
+.black {background-color: #555555;} /* Black */
