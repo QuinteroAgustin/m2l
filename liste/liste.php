@@ -46,13 +46,8 @@
                     echo "<td>".$question["reponse"]."</td>";
                     echo "<td>".$question["dat_reponse"]."</td>";
                     if($_SESSION['user']['id_usertype']>1){
-<<<<<<< HEAD
-                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'><input class=\"button blue\" type=\"submit\" value=\"Modifier\"></a></td>";
+                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'><input class=\"button blue\" type=\"submit\" value=\"Répondre\"></a></td>";
                         echo "<td><a href='supprimer.php?id=".$question["id_faq"]."'><input class=\"button red\" type=\"submit\" value=\"Supprimer\"></a></td>";
-=======
-                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'>Répondre</a></td>";
-                        echo "<td><a href='supprimer.php?id=".$question["id_faq"]."'>Supprimer</a></td>";
->>>>>>> 626dab7bc71a5cf9d4d32f628f252bf4a1ac314b
                     }
                     echo "</tr>";
                 }
