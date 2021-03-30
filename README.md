@@ -30,7 +30,7 @@ Dossier partagé M2L
 
 # Mise en page du site
 * **Le header**
-  * hearder.php :
+  * hearder.php
 * **Le footer**
   * footer.php   
 * **Le CSS**
