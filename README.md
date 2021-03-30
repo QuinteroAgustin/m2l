@@ -81,4 +81,5 @@ Dossier partagé M2L
 * pseudo: userbasket1 /  userbasket2 
 * mot de passe: userbasket1 / userbasket2
 
-
+#
+## La suite des informations sont accessibles dans le document disponible sur le Github 
