@@ -30,7 +30,7 @@ Dossier partagé M2L
 
 # Mise en page du site
 * **Le header**
-  * hearder.php :
+  * hearder.php
 * **Le footer**
   * footer.php   
 * **Le CSS**
@@ -69,7 +69,17 @@ Dossier partagé M2L
 ### Administrateur pour la ligue de volley
 * pseudo: adminvolley   
 * mot de passe: adminvolley
-### Utilisateur pour la ligue de foot
+### Utilisateur pour la ligue de volley
 * pseudo: uservolley1 /  uservolley2   
 * mot de passe: uservolley1 / uservolley2
 
+## Ligue de basket
+### Administrateur pour la ligue de basket
+* pseudo: adminbasket   
+* mot de passe: adminbasket
+### Utilisateur pour la ligue de basket
+* pseudo: userbasket1 /  userbasket2 
+* mot de passe: userbasket1 / userbasket2
+
+#
+## La suite des informations sont accessibles dans le document disponible sur le Github 
