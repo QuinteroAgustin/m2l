@@ -1,7 +1,6 @@
 <?php $active=3; $title = "Inscription"; require('header.php'); ?>
     <div class="center">
         <h1>S'inscrire</h1>
-        <!-- Formulaire -->
             <form class="form" action="inscription_validation.php" method="post">
             <table>
                 <tr>
