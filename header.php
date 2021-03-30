@@ -9,7 +9,7 @@
     <title><?= $title; ?> - M2L</title>
     <link rel="stylesheet" href="/m2l/css/main.css">
     <link rel="icon" href="/m2l/img/logo.png">
-    <img src="img/admin.jps" alt="">
+    <img src="img/adminv.jpg" alt="">
 </head>
 <body>
 <div class="navbar">
