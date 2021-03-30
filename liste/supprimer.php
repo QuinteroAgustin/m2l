@@ -16,19 +16,19 @@ if(isset($_GET['id'])){
     die("Erreur lors de la requête SQL : ".$ex->getMessage());
     }
 }
-
 ?>
   
   <h1>Supprimer une question</h1>
   <form id="supprimer" action="supprimer_validation.php" method="post">
-    <h3>Question</h3>
-    <textarea name="question" id="question" rows="10" cols="50" disabled="disabled"><?= $question['question'];?></textarea>
-    <h3>Réponse</h3>
-    <textarea name="reponse" id="reponse" rows="10" cols="50" disabled="disabled" ><?= $question['reponse'];?></textarea>
-    <br></br>
-    <input type="text" name="id" value="<?=$id?>" hidden/>
-    <input type="submit" name="submit" value="Confirmer"/>
+  <table>
+    <tr><td><h3>Question</h3></td></tr>
+    <tr><td><textarea name="question" id="question" rows="10" cols="50" disabled="disabled"><?= $question['question'];?></textarea></td></tr>
+    <tr><td><h3>Réponse</h3></td></tr>
+    <tr><td><textarea name="reponse" id="reponse" rows="10" cols="50" disabled="disabled" ><?= $question['reponse'];?></textarea></td></tr>
+    <tr><td><input class="button red full" type="submit" name="submit" value="Supprimer"/></td></tr>
+  </table>
+  <input type="text" name="id" value="<?=$id?>" hidden/>
   </form>
   <br>
-  <a href="liste.php"><input type="submit" value="Retour"></a>
+  <a href="liste.php"><input class="button blue" type="submit" value="Retour"></a>
 <?php require('../footer.php'); ?>

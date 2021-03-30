@@ -52,17 +52,14 @@
                     echo "<td>".$question["dat_reponse"]."</td>";
                     //Si rang du user sup à 1 alors il a le droit d'éditer et supprimer
                     if($_SESSION['user']['id_usertype']>1){
-                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'><input class=\"button blue\" type=\"submit\" value=\"Répondre\"></a></td>";
-                        echo "<td><a href='supprimer.php?id=".$question["id_faq"]."'><input class=\"button red\" type=\"submit\" value=\"Supprimer\"></a></td>";
+                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'><input class=\"button blue full\" type=\"submit\" value=\"Répondre\"></a></td>";
+                        echo "<td><a href='supprimer.php?id=".$question["id_faq"]."'><input class=\"button red full\" type=\"submit\" value=\"Supprimer\"></a></td>";
                     }
                     echo "</tr>";
                 }
             }
         ?>
     </table>
-    
-    
-    <br>
     <p><a href="ajouter.php"><input class="button green" type="submit" value="Ajouter une question"></a></p>
 
 <?php require('../footer.php'); ?>

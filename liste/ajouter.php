@@ -1,13 +1,12 @@
 <?php $active=2; $title = "Ajouter"; require('../header.php'); ?>
-  <h1>Maison des Ligues</h1>
-  <h2>Ajouter une question à la FAQ</h2>
-  <form id="Ajout" action="ajouter_validation.php" method="post">
-    <label for="Question" >Ecrivez votre question :</label><br>
-    <textarea name="question" id="question" rows="10" cols="50"></textarea></br>
-    </br>
-    <input type="submit" value="Soumettre"/>
-    <input type="reset" value="Vider" />
-  </form>
-  <br>
-  <a href="liste.php"><input type="submit" value="Annuler"/></a>
+<h1>Ajouter une question à la FAQ</h1>
+<form id="Ajout" action="ajouter_validation.php" method="post">
+  <table>
+    <tr><td><h3>Ecrivez votre question :</h3></td></tr>
+    <tr><td><textarea name="question" id="question" rows="10" cols="50"></textarea></td></tr>
+    <tr><td><input class="button green full" type="submit" value="Soumettre"/></td><td><input class="button red" type="reset" value="Vider" /></td></tr>
+  </table>  
+</form>
+<br>
+<a href="liste.php"><input class="button blue" type="submit" value="Annuler"/></a>
 <?php require('../footer.php'); ?> 
