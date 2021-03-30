@@ -5,51 +5,62 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-
 }
 h1 {
     text-align: center;
     text-transform: uppercase;
     color: #4CAF50;
-  }
-li.ligne {
-    display: inline;
-}
-li.left {
-    float: left;
 }
 
-li.right {
-    float: right;
-}
-ul.navbar {
+/* nav bar */
+.navbar li.ligne {display: inline;}
+.navbar li.left {float: left;}
+.navbar li.right {float: right;}
+.navbar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ddd;
     position: fixed;
     width: 100%;
     top: 0;
 }
-li a {
+.navbar li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-  /* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: rgb(0, 0, 0);
-}
+.navbar li a:hover {background-color: #008CBA(0, 0, 0);}
+.navbar .active {background-color:#4CAF50;}
 
-.active {
-    background-color:red;
+/* footer */
+.footer li.ligne {display: inline;}
+.footer li.left {float: left;}
+.footer li.right {float: right;}
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ddd;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
-.tjaune {
-    color: rgb(255, 208, 0);
+.footer li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+.footer li a:hover {background-color: #008CBA(0, 0, 0);}
+.footer .active {background-color:#4CAF50;}
+
+/* Div pour body */
 .marge {
     margin-top: 50px;
     margin: 5px;
@@ -69,50 +80,15 @@ li a:hover {
     text-align: center;
 }
 
-/* footer */
-
-div.footer {
-    line-height: 15px;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    position: fixed ;
-    padding:10px;
-}
-
-.foot_right {
-  float: right;
-  margin-right: 50px;
-  color: aliceblue;
-
-}
-
-.foot_left {
-  float: left;
-  color: aliceblue;
-  
-}
-.box-button:hover {
-    transition: 1s ease-in-out;
-    background: #4F95DA;
-  }
-  
-.box-button:hover svg {
-stroke-dashoffset: -480;
-}
-  
-.box-button span {
-color: white;
-font-size: 18px;
-font-weight: 100;
-}
-
+/* Css messages flash */
 .popup{
     margin-top: 30px;
     padding: 5px;
     color: white;
     margin-bottom: 15px;
 }
+
+/* Fromulaires */
 .form{
     padding-left: 15%;
     width: 100%;
@@ -139,6 +115,8 @@ font-weight: 100;
     border-radius: 4px;
     background-color: #f1f1f1;
   }
+
+  /* type de buttons */
 .button {
     border: none;
     color: white;
@@ -149,6 +127,8 @@ font-weight: 100;
     font-size: 16px;
     width: 100%;
 }
+
+/* Listes des question  */
 .faq{
     width: 100%;
     border-collapse: collapse;
@@ -179,6 +159,8 @@ font-weight: 100;
     border: 1px solid #ddd;
     padding: 8px;
 }
+
+/* Différentes couleurs du sytes*/
 .green {background-color: #4CAF50;} /* Green */
 .blue {background-color: #008CBA;} /* Blue */
 .red {background-color: #f44336;} /* Red */
