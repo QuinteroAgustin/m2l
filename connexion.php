@@ -13,7 +13,7 @@
         </tr>
         <tr>
           <td><p><a href="inscription.php">Pas encore inscrit ?</a></p></td>
-          <td><input class="button green" type="submit" name="submit" value="Se connecter" class="box-button"></td>
+          <td><input class="button green full" type="submit" name="submit" value="Se connecter" class="box-button"></td>
         </tr>
       </table>
     </form>

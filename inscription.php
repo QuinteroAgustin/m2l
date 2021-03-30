@@ -31,7 +31,7 @@
                     </td>
                 </tr>
                     <td><p><a href="connexion.php">Déjà inscrit ?</a></p></body></td>
-                    <td><input class="button green" name="submit" type="submit" value="S'inscrire"></td>
+                    <td><input class="button green full" name="submit" type="submit" value="S'inscrire"></td>
                 </tr>
                 <tr>
                     <td></td>
