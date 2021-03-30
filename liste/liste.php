@@ -57,5 +57,5 @@
     
     
     <br>
-    <p><a href="ajouter.php"><input class="buttongreen" type="submit" value="Ajouter une question"></a></p>
+    <p><a href="ajouter.php"><input class="button green" type="submit" value="Ajouter une question"></a></p>
 <?php require('../footer.php'); ?>
