@@ -9,7 +9,7 @@
     }
 ?>
     <h1>Liste des questions</h1>
-    <table>
+    <table class="faq">
         <tr>
             <th>Nr</th>
             <th>Auteur</th>
@@ -20,6 +20,7 @@
             <?php
                 if($_SESSION['user']['id_usertype']>1){
                     echo "<th>Actions</th>";
+                    echo "<th>&nbsp;</th>";
                 }
             ?>
             
@@ -45,14 +46,16 @@
                     echo "<td>".$question["reponse"]."</td>";
                     echo "<td>".$question["dat_reponse"]."</td>";
                     if($_SESSION['user']['id_usertype']>1){
-                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'>Modifier</a></td>";
-                        echo "<td><a href='supprimer.php?id=".$question["id_faq"]."'>Supprimer</a></td>";
+                        echo "<td><a href='editer.php?id=".$question["id_faq"]."'><input class=\"button blue\" type=\"submit\" value=\"Répondre\"></a></td>";
+                        echo "<td><a href='supprimer.php?id=".$question["id_faq"]."'><input class=\"button red\" type=\"submit\" value=\"Supprimer\"></a></td>";
                     }
                     echo "</tr>";
                 }
             }
         ?>
     </table>
+    
+    
     <br>
-    <form action="ajouter.php"><button type="submit" class="btn btn-primary">Ajouter une question <img src="../img/add.png" alt="add"></button></form>
+    <p><a href="ajouter.php"><input class="button green" type="submit" value="Ajouter une question"></a></p>
 <?php require('../footer.php'); ?>
