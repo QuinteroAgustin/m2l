@@ -11,6 +11,11 @@ h1 {
     text-transform: uppercase;
     color: #4CAF50;
 }
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
 
 /* nav bar */
 .navbar li.ligne {display: inline;}
