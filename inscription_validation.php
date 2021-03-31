@@ -1,14 +1,12 @@
-<?php 
-    $active=3; $title = "Inscription"; require('header.php'); require('sql.php');
-    //Le pseudo saisi par l'user va dans la variable $pseudo
+<?php $active=3; $title = "Inscription"; require('header.php'); require('sql.php');
+    //Chaque champ saisi par l'user va dans une variable à son nom
     $pseudo=isset($_POST['pseudo']) ? $_POST['pseudo'] :  "";
-    //Le mail saisi par l'user va dans la variable $email
     $email=isset($_POST['email']) ? $_POST['email'] :  "";
     $password=isset($_POST['password']) ? $_POST['password'] :  "";
     $password2=isset($_POST['password2']) ? $_POST['password2'] :  "";
     $ligue=isset($_POST['ligue']) ? $_POST['ligue'] : '';
     $submit=isset($_POST['submit']);
-    //Si cliqué sur submit
+    //Si l'user a cliqué sur submit
     if ($submit) {
         //Si pseudo sup à 8 carac.
         if(strlen($pseudo)>=8){
@@ -16,16 +14,17 @@
             if(strlen($password)>=8){
                 //Si 2 mdp identiques
                 if($password==$password2) {
-                    $sql="SELECT pseudo, mail FROM user WHERE pseudo LIKE :pseudo OR mail lIKE :email";
                     //Lecture du pseudo et du mail dans la BDD pour comparer si ceux-ci existent déjà ou non
-                    try{
+                    $sql="SELECT pseudo, mail FROM user WHERE pseudo LIKE :pseudo OR mail lIKE :email";
+                    try {
                         $sth = $dbh->prepare($sql);
                         $sth->execute(array(
                             ":pseudo" => $pseudo,
                             ":email" => $email
                         ));
                         $user = $sth->fetch(PDO::FETCH_ASSOC);
-                    }catch (PDOException $ex){
+                    //Gestion des erreurs
+                    } catch (PDOException $ex) {
                         die("Erreur lors de la requête SQL : " . $ex->getMessage());
                     }
                     //Si le mail ou le pseudo n'existe pas déjà alors on peut s'inscrire
@@ -44,7 +43,7 @@
                                 ':id_usertype' => 1,
                                 ':id_ligue' => $ligue
                             ));
-                        } //Gestion d'erreurs
+                        } //Gestion es erreurs
                         catch (PDOException $ex) {
                             die("Erreur lors de la requête SQL : " . $ex->getMessage());
                         }
@@ -53,7 +52,7 @@
                             "inscription" => ["green", "Vous vous êtes bien inscrit !"]
                         );
                         header("Location: connexion.php");
-                    } //Cas où la connexion échoue
+                    } //Conditions où la connexion échoue
                     else{
                         $_SESSION['messages']=array("Password" => ["red", "Cet utilisateur ou email existe déjà."]);
                         header("Location: inscription.php");

@@ -1,7 +1,9 @@
 <?php $active=2; $title = "Supprimer"; require('../header.php'); require('../sql.php') ?>
 <?php
+//Récupère l'id de la question
 if(isset($_GET['id'])){
     $id = isset($_GET['id'])?$_GET['id']:null;
+    //Prend la question et la réponse associées à l'id
     $sql = "SELECT question, reponse FROM faq WHERE id_faq=:id";
     try {
     $sth = $dbh->prepare($sql);
@@ -9,7 +11,8 @@ if(isset($_GET['id'])){
     ':id' => $id
     ));
     $question=$sth->fetch(PDO::FETCH_ASSOC);
-    } catch ( PDOException $ex) {
+    //Gestion des erreurs
+    } catch (PDOException $ex) {
     die("Erreur lors de la requête SQL : ".$ex->getMessage());
     }
 }
