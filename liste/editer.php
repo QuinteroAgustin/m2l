@@ -37,7 +37,8 @@ if(isset($_GET['id'])){
           <td><input class="button green full" type="submit" name="submit" value="Confirmer"/></td>
           <td><input class="button red" type="reset" value="Vider" /></td>
         </tr>
-      </table>    
+      </table>   
+      <input type="text" name="id" value="<?=$id?>" hidden/> 
   </form>
   <br>
   <a href="liste.php"><input class="button blue" type="submit" value="Retour"></a>
