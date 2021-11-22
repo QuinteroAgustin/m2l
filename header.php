@@ -21,6 +21,7 @@
             if(isset($_SESSION['user'])){ ?>
                 <li class="ligne left"><a class="<?php if($active==2){echo"active";}?>" href="/m2l/liste/liste.php">FAQ</a></li>
                 <li class="ligne right"><a class="<?php if($active==4){echo"active";}?>" href="/m2l/liste/deconnexion.php">Déconnexion</a></li>
+                <li class="ligne right"><a class="<?php if($active==5){echo"active";}?>" href="/m2l/liste/profile.php">Profile</a></li>
             <?php } else { 
             //Si user non connecté alors seulement connexion et inscription visibles ?>
                 <li class="ligne right"><a class="<?php if($active==3){echo"active";}?>" href="/m2l/inscription.php">Inscription</a></li>
